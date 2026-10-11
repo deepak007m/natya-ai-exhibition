@@ -1,0 +1,92 @@
+[
+  {
+    "key": "bharatanatyam",
+    "name": "Bharatanatyam",
+    "query": "Bharatanatyam classical dance performance Alarippu",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=CMorI8jsQyw",
+    "title": "Alaripu ✨ | Bharatanatyam",
+    "author": "Kiva Patel"
+  },
+  {
+    "key": "kathak",
+    "name": "Kathak",
+    "query": "Kathak dance performance Birju Maharaj",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=v21vGnehunk",
+    "title": "Pt. Birju Maharaj - Live in Concert - Duck",
+    "author": "IGSA UW-Madison"
+  },
+  {
+    "key": "kathakali",
+    "name": "Kathakali",
+    "query": "Kathakali dance performance Kerala Tourism",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=nUUl5ZraIJg",
+    "title": "Kathakali in KERALA | Indian Traditional Dance",
+    "author": "Pooja & Shravan"
+  },
+  {
+    "key": "kuchipudi",
+    "name": "Kuchipudi",
+    "query": "Kuchipudi Tarangam brass plate dance performance",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=37QyIKkSWVA",
+    "title": "🕉️🙏Kuchipudi Tarangam Dance on a Brass Plate | Spectacular Rhythmic Performance & Balancing Act",
+    "author": "SNS Kids Channel"
+  },
+  {
+    "key": "odissi",
+    "name": "Odissi",
+    "query": "Odissi dance performance Sujata Mohapatra",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=PGrgqMP4mYs",
+    "title": "Kede chhanda janelo sahi... Abhinaya in Odissi by Sujata Mohapatra | Kelucharan Mohapatra",
+    "author": "natyasutra"
+  },
+  {
+    "key": "manipuri",
+    "name": "Manipuri",
+    "query": "Manipuri Raas Leela classical dance",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=PFeFV2GR_P4",
+    "title": "Rasleela manipuri dance#northeast#northeastindia",
+    "author": "NortheastChronicles"
+  },
+  {
+    "key": "mohiniyattam",
+    "name": "Mohiniyattam",
+    "query": "Mohiniyattam dance performance Kalamandalam",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=ACHMKH-S8zU",
+    "title": "Mohiniyattam Dance Performance by Kalamandalam Sangeetha Group",
+    "author": "Amrita Cultural Trust"
+  },
+  {
+    "key": "sattriya",
+    "name": "Sattriya",
+    "query": "Sattriya dance Assam Sangeet Natak Akademi",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=7gq_Wne_U-g",
+    "title": "Sattriya Sangeet Samaroh-2021 | Festival of Sattriya Music Traditions | DAY-III   |",
+    "author": "Sangeet Natak Akademi"
+  },
+  {
+    "key": "bhangra",
+    "name": "Bhangra",
+    "query": "Traditional Bhangra folk dance Punjab",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=M0U2F9MVIpU",
+    "title": "Bhangra on ARJAN VAILLY | Animal | Folking Desi",
+    "author": "Folking Desi"
+  },
+  {
+    "key": "garba",
+    "name": "Garba",
+    "query": "Garba dance Gujarat UNESCO DD India",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=4xrxfFkefKw",
+    "title": "Garba of Gujarat",
+    "author": "UNESCO"
+  }
+]

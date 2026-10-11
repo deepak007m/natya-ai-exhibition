@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-natya-bg: #F8F3EA;
+  /* Warm Ivory */
+  --color-natya-cream: #FCF8F1;
+  /* Soft Cream */
+  --color-natya-card: #FFFDF8;
+  /* Card Background */
+  --color-natya-burgundy: #641F29;
+  /* Primary / Dark Wine */
+  --color-natya-text-dark: #2B2020;
+  /* Dark Text */
+  --color-natya-text-muted: #806F68;
+  /* Secondary Text / Muted Brown */
+  --color-natya-border: #E6D9CC;
+  /* Subtle Borders */
+  --color-natya-accent: #8B2635;
+  /* Indian Maroon Accent */
+  --color-natya-gold: #B88A44;
+  /* Muted Antique Gold */
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --animate-float-subtle: float-subtle 8s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-natya-bg);
+    color: var(--color-natya-text-dark);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-natya-burgundy);
+    color: var(--color-natya-cream);
+  }
+}
+
+@layer components {
+
+  /* Editorial Eyebrow styling */
+  .eyebrow {
+    @apply text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-semibold text-natya-burgundy mb-4 block;
+  }
+
+  /* Core Headlines */
+  .heading-hero {
+    @apply font-serif text-[42px] leading-[1.05] tracking-tight text-natya-burgundy md:text-[64px] lg:text-[72px];
+  }
+
+  .heading-section {
+    @apply font-serif text-[32px] leading-[1.1] tracking-tight text-natya-burgundy md:text-[46px] lg:text-[52px];
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-natya-burgundy text-natya-cream font-medium px-8 py-3 rounded-full hover:-translate-y-0.5 hover:bg-natya-accent hover:shadow-[0_4px_12px_#641F2926] transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center bg-natya-cream text-natya-burgundy font-medium px-8 py-3 rounded-full border border-natya-burgundy hover:-translate-y-0.5 hover:bg-[#Fcf5ec] transition-all duration-300;
+  }
+
+  /* Editorial Cards */
+  .card-editorial {
+    @apply bg-natya-card border border-natya-border rounded-[16px] shadow-[0_2px_15px_#2B202005] transition-all duration-500 hover:-translate-y-1 hover:border-natya-burgundy/30;
+  }
+}
+
+/* Subtle scrollbar fitting the editorial theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-natya-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-natya-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-natya-text-muted);
+}
+
+@keyframes float-subtle {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-subtle {
+
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}

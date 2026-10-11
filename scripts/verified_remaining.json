@@ -1,0 +1,56 @@
+[
+  {
+    "key": "bhangra_trad",
+    "name": "Bhangra",
+    "query": "Punjabi traditional folk dance Bhangra performance DD India",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=IOr1aFhnkiI",
+    "title": "Bhangra | Folk Dance of Punjab | Wingz Academy Punjab | Orange City Dance Festival",
+    "author": "JollyGul Main Channel"
+  },
+  {
+    "key": "lavani",
+    "name": "Lavani",
+    "query": "Lavani folk dance Maharashtra Sangeet Natak Akademi",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=zGVS4U3rMyg",
+    "title": "💃 Powerful Traditional Lavani Dance Performance#1st day#नारंगी#AI Devotional dance#उद्धेग अंबे उद्धे",
+    "author": "Official Harshal Entertainment "
+  },
+  {
+    "key": "mudras",
+    "name": "Mudras",
+    "query": "Bharatanatyam Hastha Mudras Natyarambha demonstration",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=__bOyh3NrKA",
+    "title": "Bharatanatyam Mudras - Learn Asamyuta Hasta Viniyoga [HD] (Video Lesson for Beginners)",
+    "author": "Kalavenue"
+  },
+  {
+    "key": "navarasa",
+    "name": "Navarasa",
+    "query": "Navarasa expressions Bharatanatyam demonstration Sahapedia",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=hY-uWNFMMJA",
+    "title": "Navarasas of Natyashastra | 9 expressions | Music credits: @shefalipani | #aigirinandini #dance",
+    "author": "Jeniva Das"
+  },
+  {
+    "key": "dance",
+    "name": "Indian Classical Dance",
+    "query": "Glimpses of Indian Classical Dance Ministry of External Affairs",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=KDjM3pMU51o",
+    "title": "Classical Dances Of India🪩🇮🇳  || ias toppers interview",
+    "author": "UPSC shorts 3016"
+  },
+  {
+    "key": "abhinaya",
+    "name": "Abhinaya",
+    "query": "Abhinaya Bharatanatyam Natyashastra demonstration SPIC MACAY",
+    "valid": true,
+    "url": "https://www.youtube.com/watch?v=Gbaon1diwgA",
+    "title": "Bharatanatyam Worshop | SPIC MACAY Anubhav | Live | Day 5",
+    "author": "SPIC MACAY"
+  }
+]
