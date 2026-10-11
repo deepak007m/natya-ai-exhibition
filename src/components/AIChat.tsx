@@ -22,7 +22,7 @@ export const AIChat = () => {
     const [characterState, setCharacterState] = useState<CharacterState>('idle');
     const [activeSpeakingId, setActiveSpeakingId] = useState<string | null>(null);
     const [errorStatus, setErrorStatus] = useState('');
-    const messagesEndRef = useRef<HTMLDivElement>(null);
+    const chatContainerRef = useRef<HTMLDivElement>(null);
     const inputTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const { speak, stop: stopSpeaking, isSpeaking } = useSpeechSynthesis();
@@ -38,9 +38,14 @@ export const AIChat = () => {
 
     const { startListening, stopListening, isListening, supported: hasVoiceIn } = useSpeechRecognition(handleVoiceInput);
 
-    // Auto-scroll to latest message
+    // Auto-scroll ONLY the chat container, never the main window/document
     useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+        if (chatContainerRef.current) {
+            chatContainerRef.current.scrollTo({
+                top: chatContainerRef.current.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
     }, [messages]);
 
     // Reset active speaking id when speech ends
@@ -206,7 +211,7 @@ export const AIChat = () => {
                         className="flex flex-col bg-[#FFFDF8] rounded-[24px] border border-[#E6D9CC] overflow-hidden h-[650px] shadow-[0_4px_20px_#2B202005]"
                     >
                         {/* Conversation Area */}
-                        <div className="flex-1 overflow-y-auto p-6 md:p-8 space-y-6" role="log" aria-live="polite">
+                        <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 md:p-8 space-y-6" role="log" aria-live="polite">
                             <AnimatePresence>
                                 {messages.map((msg, idx) => (
                                     <motion.div
@@ -233,8 +238,8 @@ export const AIChat = () => {
                                                             type="button"
                                                             onClick={() => handleToggleListen(msg.id, msg.text)}
                                                             className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-sans font-medium transition-all duration-300 ${activeSpeakingId === msg.id && isSpeaking
-                                                                    ? 'bg-[#641F29] text-white shadow-sm'
-                                                                    : 'bg-[#FCF8F1] text-[#641F29] border border-[#E6D9CC] hover:bg-[#F8F3EA] hover:border-[#641F29]/30'
+                                                                ? 'bg-[#641F29] text-white shadow-sm'
+                                                                : 'bg-[#FCF8F1] text-[#641F29] border border-[#E6D9CC] hover:bg-[#F8F3EA] hover:border-[#641F29]/30'
                                                                 }`}
                                                             aria-label={activeSpeakingId === msg.id && isSpeaking ? "Stop speech" : "Listen to response"}
                                                         >
@@ -277,7 +282,6 @@ export const AIChat = () => {
                                     </motion.div>
                                 )}
                             </AnimatePresence>
-                            <div ref={messagesEndRef} />
                         </div>
 
                         {/* Input Area */}
